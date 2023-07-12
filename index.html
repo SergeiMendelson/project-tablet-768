@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project-tablet-768</title>
-    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header class="header">
-      <a header__logo href="#0">
+      <a class="header__logo" href="#0">
         <img
           class="header__logo-image"
           src="images/VЁRSTKA.svg"
@@ -170,7 +170,13 @@
           взаимодействие в команде:
         </h2>
         <ul class="background-white__point-list">
-          <li class="background-white__point-list-item">
+          <!-- В первой строке списка к качестве булита вместо дефиса используем картинку -->
+          <li class="background-white__point-list-item_no-hyphen">
+            <img
+              class="background-white__bullet-image"
+              src="images/png-clipart-index-finger-computer-icons-hand-text-photography.png"
+              alt=""
+            />
             <p class="background-white__point-list-item-text">
               <strong class="background-white__point-list-item-text_bold"
                 >Проявляйте инициативу.</strong
@@ -180,7 +186,8 @@
               разработать, объединив свои умы
             </p>
           </li>
-          <li class="background-white__point-list-item">
+          <!--Во всех остальных строках списка в качестве булита используем дефис-->
+          <li class="background-white__point-list-item_hyphen">
             <p class="background-white__point-list-item-text">
               <strong class="background-white__point-list-item-text_bold"
                 >Слушайте других.</strong
@@ -190,7 +197,7 @@
               новых идей и решений, которые могут предложить ваши коллеги.
             </p>
           </li>
-          <li class="background-white__point-list-item">
+          <li class="background-white__point-list-item_hyphen">
             <p class="background-white__point-list-item-text">
               <strong class="background-white__point-list-item-text_bold"
                 >Распределяйте задачи.</strong
@@ -200,7 +207,7 @@
               также повышает мотивацию и эффективность работы.
             </p>
           </li>
-          <li class="background-white__point-list-item">
+          <li class="background-white__point-list-item_hyphen">
             <p class="background-white__point-list-item-text">
               <strong class="background-white__point-list-item-text_bold"
                 >Будьте терпеливыми.</strong
@@ -224,10 +231,10 @@
       </a>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__meni-item">
+          <li class="footer__menu-item">
             <a class="footer__menu-link" href="#0">VK</a>
           </li>
-          <li class="footer__meni-item">
+          <li class="footer__menu-item">
             <a class="footer__menu-link" href="#0">Youtube</a>
           </li>
         </ul>
@@ -235,6 +242,3 @@
     </footer>
   </body>
 </html>
-
-
-
